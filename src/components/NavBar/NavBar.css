@@ -1,0 +1,77 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* left */
+.NavBar__left {
+  display: flex;
+  width: 20%;
+}
+.NavBar__left > img {
+  height: 44px;
+  margin-right: 1rem;
+}
+.left__input {
+  display: flex;
+  align-items: center;
+
+  border-radius: 33px;
+  padding: 10px;
+  color: #606770;
+  background-color: #f0f2f5;
+}
+.left__input > input {
+  border-radius: 33px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+}
+/* center */
+.NavBar__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  /* border: 1px solid black; */
+
+  width: 40%;
+}
+.center__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.center__icons:hover {
+  background-color: #f0f2f5;
+}
+
+/* Right */
+.NavBar__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 18%;
+}
+.NavBar__right > img {
+  height: 40px;
+  border-radius: 50%;
+}
+.right__icons {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #e4e6eb;
+  padding: 0.5rem;
+}

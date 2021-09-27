@@ -1,5 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
+  background-color: #f0f2f5;
 }
 
 /* LOGO */
