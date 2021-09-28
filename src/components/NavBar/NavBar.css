@@ -50,10 +50,14 @@
   justify-content: center;
   width: 100%;
   padding: 10px;
-  border-radius: 10px;
 }
 .center__icons:hover {
+  border-radius: 10px;
   background-color: #f0f2f5;
+}
+.isActive {
+  color: blue;
+  border-bottom: 4px solid blue;
 }
 
 /* Right */

@@ -4,6 +4,11 @@
 }
 .App {
   background-color: #f0f2f5;
+  height: 100vh;
+}
+.App__body {
+  display: flex;
+  margin-top: 2rem;
 }
 
 /* LOGO */

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './NavBar.css';
 // Material UI icons
 import SearchIcon from '@mui/icons-material/Search';
@@ -11,7 +11,6 @@ import AppsIcon from '@mui/icons-material/Apps';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import axios from 'axios';
 
 export default function NavBar({ users }) {
   // useEffect(() => {
@@ -34,8 +33,8 @@ export default function NavBar({ users }) {
         </div>
       </div>
       <div className="NavBar__center">
-        <div className="center__icons">
-          <HomeIcon fontSize="medium" />
+        <div className="center__icons isActive">
+          <HomeIcon fontSize="medium" id="isActive" />
         </div>
 
         <div className="center__icons">

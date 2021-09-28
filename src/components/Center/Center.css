@@ -1,0 +1,6 @@
+.Center {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  border: 1px solid black;
+}
