@@ -9,6 +9,7 @@ import GroupsIcon from '@mui/icons-material/Groups';
 
 export default function RightSideBar({ users }) {
   // users.shift();
+  // console.log(users);
   delete users[0];
   return (
     <div className="RightSideBar">
@@ -24,9 +25,10 @@ export default function RightSideBar({ users }) {
       <div className="RightSideBar__body">
         {users.map((user) => (
           <div className="body__item" key={user.login.uuid}>
-            <img src={user.picture.thumbnail} alt="" />
+            <img src={users.length > 0 ? user.picture.thumbnail : ''} alt="" />
             <p>
-              {user.name.first} {user.name.last}
+              {users.length > 0 ? user.name.first : ''}{' '}
+              {users.length > 0 ? user.name.last : ''}
             </p>
           </div>
         ))}

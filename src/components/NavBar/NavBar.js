@@ -52,8 +52,8 @@ export default function NavBar({ users }) {
         </div>
       </div>
       <div className="NavBar__right">
-        <img src={users.length > 0 ? users[0].picture.thumbnail : ''} alt="" />
-        <p>{users.length > 0 ? users[0].name.first : ''}</p>
+        <img src={users ? users.picture.thumbnail : ''} alt="" />
+        <p>{users ? users.name.first : ''}</p>
         <div className="right__icons">
           <AppsIcon fontSize="medium" />
         </div>

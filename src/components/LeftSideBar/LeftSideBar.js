@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './LeftSideBar.css';
 import GroupIcon from '@mui/icons-material/Group';
 import GroupsIcon from '@mui/icons-material/Groups';
@@ -8,18 +8,23 @@ import QueuePlayNextIcon from '@mui/icons-material/QueuePlayNext';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 export default function LeftSideBar({ users }) {
-  console.log({ users });
+  // const [users, setUsers] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchData = async () =>
+  //     await axios.get('https://randomuser.me/api/?results=15').then((res) => {
+  //       const newData = [...res.data.results];
+  //       setUsers(newData);
+  //     });
+  //   fetchData();
+  // }, []);
   return (
-    <div className="LeftSideBar" key={users}>
+    <div className="LeftSideBar">
       <div className="LeftSideBar__top">
         <div className="top__item">
-          <img
-            src={users.length > 0 ? users[0].picture.thumbnail : ''}
-            alt=""
-          />
+          <img src={users ? users.picture.thumbnail : ''} alt="" />
           <p>
-            {users.length > 0 ? users[0].name.first : ''}
-            {users.length > 0 ? users[0].name.last : ''}
+            {users ? users.name.first : ''} {users ? users.name.last : ''}
           </p>
         </div>
         <div className="top__item">

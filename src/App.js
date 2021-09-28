@@ -21,11 +21,11 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar users={users} />
+      <NavBar users={users[0]} />
       <div className="App__body">
-        <LeftSideBar users={users} />
-        <Center />
-        <RightSideBar users={users} />
+        <LeftSideBar users={users[0]} />
+        <Center users={users.map((user) => user)} />
+        <RightSideBar users={users.map((user) => user)} />
       </div>
       <img src={logo} className="App-logo" alt="logo" />
     </div>
