@@ -5,9 +5,11 @@ import VideoCallIcon from '@mui/icons-material/VideoCall';
 import SearchIcon from '@mui/icons-material/Search';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import AddIcon from '@mui/icons-material/Add';
-import SupervisedUserCircle from '@mui/icons-material/SupervisedUserCircle';
+import GroupsIcon from '@mui/icons-material/Groups';
 
 export default function RightSideBar({ users }) {
+  // users.shift();
+  delete users[0];
   return (
     <div className="RightSideBar">
       <div className="RightSideBar__heading">
@@ -33,15 +35,15 @@ export default function RightSideBar({ users }) {
       <div className="RightSideBar__footer">
         <h4>Group Conversations</h4>
         <div className="footer__group">
-          <SupervisedUserCircle fontSize="large" />
+          <GroupsIcon fontSize="large" />
           <p>Dan, William, and 5 other</p>
         </div>
         <div className="footer__group">
-          <SupervisedUserCircle fontSize="large" />
+          <GroupsIcon fontSize="large" />
           <p>Jose, Anna, and 2 other</p>
         </div>
         <div className="footer__group">
-          <SupervisedUserCircle fontSize="large" />
+          <GroupsIcon fontSize="large" />
           <p> Jay, Enoch, and 11 other</p>
         </div>
         <div className="footer__create">

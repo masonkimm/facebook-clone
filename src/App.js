@@ -13,7 +13,8 @@ function App() {
   useEffect(() => {
     const fetchData = async () =>
       await axios.get('https://randomuser.me/api/?results=15').then((res) => {
-        setUsers(res.data.results);
+        const newData = [...res.data.results];
+        setUsers(newData);
       });
     fetchData();
   }, []);
@@ -22,7 +23,7 @@ function App() {
     <div className="App">
       <NavBar users={users} />
       <div className="App__body">
-        <LeftSideBar />
+        <LeftSideBar users={users} />
         <Center />
         <RightSideBar users={users} />
       </div>
