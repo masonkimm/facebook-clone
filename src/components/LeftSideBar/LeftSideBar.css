@@ -12,13 +12,16 @@
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  color: gray;
 }
 .top__item > img {
   border-radius: 50%;
   height: 2rem;
 }
-.top__item > p {
+.top__item > p,
+.top__item > h3 {
   margin-left: 1rem;
+  color: black;
 }
 .item__seeMore {
   border-radius: 50%;
@@ -32,10 +35,14 @@
 .LeftSideBar__bottom > h3 {
   color: gray;
 }
+
 .bottom__item {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+}
+.bottom__item > p {
+  color: black;
 }
 .bottom__item > img {
   object-fit: contain;

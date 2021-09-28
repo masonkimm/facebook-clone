@@ -4,6 +4,8 @@ import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import MoodIcon from '@mui/icons-material/Mood';
 import axios from 'axios';
+import Post from '../Post/Post';
+import Story from '../Story/Story';
 
 export default function Center({ users }) {
   const [pictures, setPictures] = useState([]);
@@ -26,67 +28,13 @@ export default function Center({ users }) {
   return (
     <div className="Center" key={users}>
       <div className="Center__stories">
-        {pictures.length > 0 ? (
-          <>
-            <div
-              className="story"
-              style={{ backgroundImage: `URL(${pictures[0].urls.small})` }}
-            >
-              <img
-                src={users.length > 0 ? users[0].picture.thumbnail : ''}
-                alt=""
-                id="userThumbnail"
-              />
-              <p>
-                {users.length > 0 ? users[0].name.first : ''}{' '}
-                {users.length > 0 ? users[0].name.last : ''}
-              </p>
-            </div>
-            <div
-              className="story"
-              style={{ backgroundImage: `URL(${pictures[1].urls.small})` }}
-            >
-              <img
-                src={users.length > 0 ? users[1].picture.thumbnail : ''}
-                alt=""
-                id="userThumbnail"
-              />
-              <p>
-                {users.length > 0 ? users[1].name.first : ''}{' '}
-                {users.length > 0 ? users[1].name.last : ''}
-              </p>
-            </div>
-            <div
-              className="story"
-              style={{ backgroundImage: `URL(${pictures[2].urls.small})` }}
-            >
-              <img
-                src={users.length > 0 ? users[2].picture.thumbnail : ''}
-                alt=""
-                id="userThumbnail"
-              />
-              <p>
-                {users.length > 0 ? users[2].name.first : ''}{' '}
-                {users.length > 0 ? users[2].name.last : ''}
-              </p>
-            </div>
-            <div
-              className="story"
-              style={{ backgroundImage: `URL(${pictures[3].urls.small})` }}
-            >
-              <img
-                src={users.length > 0 ? users[3].picture.thumbnail : ''}
-                alt=""
-                id="userThumbnail"
-              />
-              <p>
-                {users.length > 0 ? users[3].name.first : ''}{' '}
-                {users.length > 0 ? users[3].name.last : ''}
-              </p>
-            </div>
-          </>
-        ) : null}
+        <Story users={users[0]} pictures={pictures[0]} />
+        <Story users={users[1]} pictures={pictures[1]} />
+        <Story users={users[2]} pictures={pictures[2]} />
+        <Story users={users[3]} pictures={pictures[3]} />
+        {/* <Story users={users[4]} pictures={pictures[4]} /> */}
       </div>
+
       <div className="Center__status">
         <div className="status__topRow">
           <img
@@ -105,7 +53,6 @@ export default function Center({ users }) {
         <div className="status__bottomRow">
           <div className="bottomRow__icons">
             <PhotoLibraryIcon />
-
             <p>Photo/Video</p>
           </div>
           <div className="bottomRow__icons">
@@ -118,7 +65,12 @@ export default function Center({ users }) {
           </div>
         </div>
       </div>
-      <div className="Center__post"></div>
+      <div className="Center__post">
+        <Post users={users[0]} pictures={pictures[0]} />
+        <Post users={users[1]} pictures={pictures[1]} />
+        <Post users={users[2]} pictures={pictures[2]} />
+        <Post users={users[3]} pictures={pictures[3]} />
+      </div>
     </div>
   );
 }

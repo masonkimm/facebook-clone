@@ -8,24 +8,14 @@ import QueuePlayNextIcon from '@mui/icons-material/QueuePlayNext';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 export default function LeftSideBar({ users }) {
-  // const [users, setUsers] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchData = async () =>
-  //     await axios.get('https://randomuser.me/api/?results=15').then((res) => {
-  //       const newData = [...res.data.results];
-  //       setUsers(newData);
-  //     });
-  //   fetchData();
-  // }, []);
   return (
     <div className="LeftSideBar">
       <div className="LeftSideBar__top">
         <div className="top__item">
           <img src={users ? users.picture.thumbnail : ''} alt="" />
-          <p>
+          <h3>
             {users ? users.name.first : ''} {users ? users.name.last : ''}
-          </p>
+          </h3>
         </div>
         <div className="top__item">
           <GroupIcon fontSize="large" />

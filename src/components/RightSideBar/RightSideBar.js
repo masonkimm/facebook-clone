@@ -14,7 +14,7 @@ export default function RightSideBar({ users }) {
   return (
     <div className="RightSideBar">
       <div className="RightSideBar__heading">
-        <h4>Contacts</h4>
+        <h3>Contacts</h3>
         <div className="heading__icons">
           <VideoCallIcon />
           <SearchIcon />
@@ -35,7 +35,7 @@ export default function RightSideBar({ users }) {
       </div>
 
       <div className="RightSideBar__footer">
-        <h4>Group Conversations</h4>
+        <h3>Group Conversations</h3>
         <div className="footer__group">
           <GroupsIcon fontSize="large" />
           <p>Dan, William, and 5 other</p>
