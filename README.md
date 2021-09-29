@@ -1,3 +1,78 @@
+# Weather-APP
+
+Project link: (https://masonkimm.github.io/facebook-clone/)
+
+## Description:
+
+Facebook clone built with React and firebase firestore database.
+
+## Features:
+
+- Google Auth to login and display user's profile picture and display name.
+- Post messages and pictures
+- Live Stack Overflow widget
+
+## Tech used
+
+- React
+- Material UI
+- Random User API
+- Unsplash API
+- Github
+- Github Pages
+
+## Demo
+
+![alt-text](./FB-clone.png)
+
+## Table of Contents:
+
+- [Description](#Description)
+- [Business Context](#Business_Context)
+- [Git Hub](#GitHub)
+- [Available Scripts](#Available_Scripts)
+- [Credits](#Credits)
+- [License](#License)
+
+## Business_Context
+
+```
+Front-End focused facebook clone build with utilization of firebase firestore databse for back-end service.
+```
+
+## Code Utilization:
+
+- Language Count: ![](https://img.shields.io/github/languages/count/masonkimm/facebook-clone)
+- Top language: ![](https://img.shields.io/github/languages/top/masonkimm/facebook-clone)
+
+## GitHub:
+
+- GitHub link: (https://github.com/masonkimm)
+
+- Github project page link: (https://github.com/masonkimm/facebook-clone)
+
+## Available_Scripts:
+
+Command:
+
+```sh
+git clone git@github.com:masonkimm/facebook-clone.git
+```
+
+## Credits:
+
+Mason Kim
+
+## License:
+
+MIT License Copyright(c) 2021 M.Kim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software" ), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
