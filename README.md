@@ -1,16 +1,10 @@
-# Weather-APP
+# Facebook - Clone
 
 Project link: (https://masonkimm.github.io/facebook-clone/)
 
 ## Description:
 
-Facebook clone built with React and firebase firestore database.
-
-## Features:
-
-- Google Auth to login and display user's profile picture and display name.
-- Post messages and pictures
-- Live Stack Overflow widget
+Facebook clone focused on Front End development skills.
 
 ## Tech used
 
