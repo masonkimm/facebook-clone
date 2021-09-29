@@ -13,13 +13,6 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 export default function NavBar({ users }) {
-  // useEffect(() => {
-  //   axios.get('https://randomuser.me/api/?results=15').then((res) => {
-  //     setUsers(res.data.results);
-  //   });
-  // }, []);
-  // const [users, setUsers] = useState([]);
-
   return (
     <div className="NavBar">
       <div className="NavBar__left">
@@ -36,7 +29,6 @@ export default function NavBar({ users }) {
         <div className="center__icons isActive">
           <HomeIcon fontSize="medium" id="isActive" />
         </div>
-
         <div className="center__icons">
           <OndemandVideoIcon fontSize="medium" />
         </div>
@@ -55,16 +47,16 @@ export default function NavBar({ users }) {
         <img src={users ? users.picture.thumbnail : ''} alt="" />
         <p>{users ? users.name.first : ''}</p>
         <div className="right__icons">
-          <AppsIcon fontSize="medium" />
+          <AppsIcon fontSize="small" />
         </div>
         <div className="right__icons">
-          <ChatIcon fontSize="medium" />
+          <ChatIcon fontSize="small" />
         </div>
         <div className="right__icons">
-          <NotificationsIcon fontSize="medium" />
+          <NotificationsIcon fontSize="small" />
         </div>
         <div className="right__icons">
-          <ArrowDropDownIcon fontSize="medium" />
+          <ArrowDropDownIcon fontSize="small" />
         </div>
       </div>
     </div>

@@ -8,8 +8,6 @@ import AddIcon from '@mui/icons-material/Add';
 import GroupsIcon from '@mui/icons-material/Groups';
 
 export default function RightSideBar({ users }) {
-  // users.shift();
-  // console.log(users);
   delete users[0];
   return (
     <div className="RightSideBar">

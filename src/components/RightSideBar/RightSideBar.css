@@ -16,13 +16,20 @@
   display: flex;
   justify-content: space-between;
   margin-right: 1rem;
-  width: 30%;
-  /* border: 1px solid black; */
+  width: 35%;
+  color: gray;
 }
 /* Body */
 .RightSideBar__body {
   margin-top: 1rem;
   border-bottom: 2px solid rgb(172, 168, 168);
+  overflow-y: scroll;
+  height: 350px;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.RightSideBar__body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 .body__item {
   display: flex;
