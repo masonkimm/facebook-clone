@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 2.5;
-  /* border: 1px solid black; */
   padding: 0 4rem 0 4rem;
-  /* margin: 1rem; */
   margin: 2rem 3rem 0 3rem;
   max-width: 50%;
   overflow-x: scroll;
@@ -76,4 +74,28 @@
 /* BOTTOM: posts */
 .Center__post {
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .Center {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .status__bottomRow {
+    margin-left: -13px;
+  }
+  .bottomRow__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .bottomRow__icons > .icons {
+    margin-left: 10px;
+  }
+  .bottomRow__icons > p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }

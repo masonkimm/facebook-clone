@@ -50,3 +50,10 @@
   margin-right: 1rem;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .LeftSideBar {
+    display: none;
+    /* visibility: hidden; */
+  }
+}

@@ -26,7 +26,7 @@ export default function Center({ users }) {
 
   console.log(pictures);
   return (
-    <div className="Center" key={users}>
+    <div className="Center">
       <div className="Center__stories">
         <Story users={users[0]} pictures={pictures[0]} />
         <Story users={users[1]} pictures={pictures[1]} />
@@ -57,15 +57,15 @@ export default function Center({ users }) {
         </div>
         <div className="status__bottomRow">
           <div className="bottomRow__icons">
-            <PhotoLibraryIcon />
+            <PhotoLibraryIcon className="icons" />
             <p>Photo/Video</p>
           </div>
           <div className="bottomRow__icons">
-            <PersonAddIcon />
+            <PersonAddIcon className="icons" />
             <p>Tag Friends</p>
           </div>
           <div className="bottomRow__icons">
-            <MoodIcon />
+            <MoodIcon className="icons" />
             <p>Feeling/Activity</p>
           </div>
         </div>

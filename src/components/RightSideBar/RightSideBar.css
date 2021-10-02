@@ -4,7 +4,6 @@
   flex: 1;
   margin-left: 2rem;
   margin-right: 1rem;
-  /* border: 1px solid black; */
 }
 /* Heading */
 .RightSideBar__heading {
@@ -61,4 +60,10 @@
   border-radius: 50%;
   background-color: #e4e6eb;
   margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .RightSideBar {
+    display: none;
+  }
 }

@@ -82,3 +82,23 @@
   padding: 0.5rem;
   margin-right: 1rem;
 }
+
+@media (max-width: 768px) {
+  .NavBar {
+    display: block;
+    background-color: #385898;
+  }
+  .NavBar__left {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .left__input {
+    width: 100%;
+  }
+  .NavBar__center {
+    display: none;
+  }
+  .NavBar__right > p {
+    color: white;
+  }
+}
