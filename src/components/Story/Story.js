@@ -11,7 +11,7 @@ export default function Story({ users, pictures }) {
         >
           <img
             src={users ? users.picture.thumbnail : ''}
-            alt=""
+            alt={users ? users.name.first : ''}
             id="userThumbnail"
           />
           <p>

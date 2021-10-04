@@ -23,7 +23,10 @@ export default function RightSideBar({ users }) {
       <div className="RightSideBar__body">
         {users.map((user) => (
           <div className="body__item" key={user.login.uuid}>
-            <img src={users.length > 0 ? user.picture.thumbnail : ''} alt="" />
+            <img
+              src={users.length > 0 ? user.picture.thumbnail : ''}
+              alt={users.length > 0 ? user.name.first : ''}
+            />
             <p>
               {users.length > 0 ? user.name.first : ''}{' '}
               {users.length > 0 ? user.name.last : ''}
@@ -35,20 +38,20 @@ export default function RightSideBar({ users }) {
       <div className="RightSideBar__footer">
         <h3>Group Conversations</h3>
         <div className="footer__group">
-          <GroupsIcon fontSize="large" />
+          <GroupsIcon fontSize="medium" />
           <p>Dan, William, and 5 other</p>
         </div>
         <div className="footer__group">
-          <GroupsIcon fontSize="large" />
+          <GroupsIcon fontSize="medium" />
           <p>Jose, Anna, and 2 other</p>
         </div>
         <div className="footer__group">
-          <GroupsIcon fontSize="large" />
+          <GroupsIcon fontSize="medium" />
           <p> Jay, Enoch, and 11 other</p>
         </div>
         <div className="footer__create">
           <div className="create__button">
-            <AddIcon fontSize="large" />
+            <AddIcon fontSize="medium" />
           </div>
 
           <h4>Create New Group</h4>

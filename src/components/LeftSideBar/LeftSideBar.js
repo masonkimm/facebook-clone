@@ -12,7 +12,10 @@ export default function LeftSideBar({ users }) {
     <div className="LeftSideBar">
       <div className="LeftSideBar__top">
         <div className="top__item">
-          <img src={users ? users.picture.thumbnail : ''} alt="" />
+          <img
+            src={users ? users.picture.thumbnail : ''}
+            alt={users ? users.name.first : ''}
+          />
           <h3>
             {users ? users.name.first : ''} {users ? users.name.last : ''}
           </h3>
@@ -48,19 +51,19 @@ export default function LeftSideBar({ users }) {
       <div className="LeftSideBar__bottom">
         <h3> Your Shortcuts</h3>
         <div className="bottom__item">
-          <img src="https://bit.ly/39KMKcQ" alt="" />
+          <img src="https://bit.ly/39KMKcQ" alt="Camping" />
           <p>Camping/Adventure</p>
         </div>
         <div className="bottom__item">
-          <img src="https://bit.ly/2Y85L6L" alt="" />
+          <img src="https://bit.ly/2Y85L6L" alt="PC Hardware" />
           <p>PC Enthusiasts</p>
         </div>
         <div className="bottom__item">
-          <img src="https://bit.ly/3AQXv9p" alt="" />
+          <img src="https://bit.ly/3AQXv9p" alt="Stock Market" />
           <p>Stock Market</p>
         </div>
         <div className="bottom__item">
-          <img src="https://bit.ly/3ASzY80" alt="" />
+          <img src="https://bit.ly/3ASzY80" alt="Golf" />
           <p>Golf Club</p>
         </div>
       </div>

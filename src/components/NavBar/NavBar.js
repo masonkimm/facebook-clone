@@ -18,7 +18,7 @@ export default function NavBar({ users }) {
       <div className="NavBar__left">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png"
-          alt=""
+          alt="Facebook logo"
         />
         <div className="left__input">
           <SearchIcon />
@@ -44,7 +44,10 @@ export default function NavBar({ users }) {
         </div>
       </div>
       <div className="NavBar__right">
-        <img src={users ? users.picture.thumbnail : ''} alt="" />
+        <img
+          src={users ? users.picture.thumbnail : ''}
+          alt={users ? users.name.first : ''}
+        />
         <p>{users ? users.name.first : ''}</p>
         <div className="right__icons">
           <AppsIcon fontSize="small" />

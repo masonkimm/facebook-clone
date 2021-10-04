@@ -24,7 +24,6 @@ export default function Center({ users }) {
     fetchData();
   }, []);
 
-  console.log(pictures);
   return (
     <div className="Center">
       <div className="Center__stories">
@@ -44,7 +43,7 @@ export default function Center({ users }) {
         <div className="status__topRow">
           <img
             src={users.length > 0 ? users[0].picture.thumbnail : ''}
-            alt=""
+            alt={users.length > 0 ? users[0].name.first : ''}
           />
           <div className="topRow__input">
             <input
@@ -71,10 +70,38 @@ export default function Center({ users }) {
         </div>
       </div>
       <div className="Center__post">
-        <Post users={users[0]} pictures={pictures[0]} />
-        <Post users={users[1]} pictures={pictures[1]} />
-        <Post users={users[2]} pictures={pictures[2]} />
-        <Post users={users[3]} pictures={pictures[3]} />
+        <Post
+          users={users[0]}
+          pictures={pictures[0]}
+          day={1}
+          like={1}
+          comment={1}
+          share={1}
+        />
+        <Post
+          users={users[1]}
+          pictures={pictures[1]}
+          day={3}
+          like={23}
+          comment={3}
+          share={2}
+        />
+        <Post
+          users={users[2]}
+          pictures={pictures[2]}
+          day={2}
+          like={46}
+          comment={20}
+          share={19}
+        />
+        <Post
+          users={users[3]}
+          pictures={pictures[3]}
+          day={6}
+          like={1}
+          comment={1}
+          share={2}
+        />
       </div>
     </div>
   );
